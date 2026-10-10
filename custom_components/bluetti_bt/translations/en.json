@@ -298,6 +298,12 @@
       "ctrl_eco_dc": {
         "name": "Eco Mode DC"
       },
+      "ctrl_grid_stabilizing": {
+        "name": "Grid Self-Adaption"
+      },
+      "ctrl_time_of_use": {
+        "name": "Time of Use"
+      },
       "ctrl_power_lifting": {
         "name": "Power Lifting"
       },
@@ -349,6 +355,12 @@
       },
       "ctrl_generator": {
         "name": "Generator Mode"
+      },
+      "ctrl_grid_stabilizing": {
+        "name": "Grid Self-Adaption"
+      },
+      "ctrl_time_of_use": {
+        "name": "Time of Use"
       },
       "ctrl_power_lifting": {
         "name": "Power Lifting"

@@ -5,6 +5,13 @@
 
 Bluetti Integration for Home Assistant
 
+> **This is a fork** of [Patrick762/hassio-bluetti-bt](https://github.com/Patrick762/hassio-bluetti-bt) that adds the BLUETTI FridgePower (`FP`).
+> It installs [bluetti-bt-lib](https://github.com/rgw3d/bluetti-bt-lib/tree/add-fridgepower-support) from the `add-fridgepower-support` branch until
+> [Patrick762/bluetti-bt-lib#106](https://github.com/Patrick762/bluetti-bt-lib/pull/106) is released. Use the upstream integration for everything else.
+>
+> To install: HACS > three-dot menu > Custom repositories > add `https://github.com/rgw3d/hassio-bluetti-bt` with type "Integration".
+> The FridgePower is an encrypted device, so its controls show up read-only (as sensors and binary sensors), like every other encrypted device in this integration.
+
 The current [Roadmap for this project and the library can be found here](https://github.com/users/Patrick762/projects/4)
 
 ## Disclaimer

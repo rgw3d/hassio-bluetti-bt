@@ -36,8 +36,14 @@ class TestBTNames(unittest.TestCase):
             matchers.append(local_name)
 
         for name in self.device_names:
+            # Matchers need at least 3 characters, so a matcher can be longer
+            # than a short device name ("FP2*" for "FP")
             found = filter(
-                lambda m: m.endswith("*") and name.startswith(m.strip("*")), matchers
+                lambda m: m.endswith("*")
+                and (
+                    name.startswith(m.strip("*")) or m.strip("*").startswith(name)
+                ),
+                matchers,
             )
             self.assertGreaterEqual(
                 len(list(found)), 1, f"Missing BT matcher for device: {name}"
